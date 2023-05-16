@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tienda Licandeo</title>
+    <script
+      src="https://kit.fontawesome.com/283335a286.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--esta informacion es para el estilo de las letras estan en google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <!--Lo siguiente es el menu superior donde se establece el Logo y la navegacion-->
+    <header class="encabezado">
+      <div class="contenedor-navegacion">
+        <!-- El Contenido-Navegacion es el padre de Logo y el menu de navegacion -->
+        <div class="contenido-navegacion contenedor">
+          <div class="logo">
+            <!--colores a Licandeo-->
+            <h2>
+              Tienda <span class="">Li</span><span>can</span
+              ><span class="">deo</span>
+            </h2>
+          </div>
+          <nav class="navegacion ocultar">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Tienda</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Tips Materos</a>
+          </nav>
+          <!--Se crea el menu desplegable-->
+          <div class="hamburguesa"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="contenido-header">
+        <div class="contenedor-encabezado">
+          <div class="texto-encabezado">
+            <h2>Tienda Licandeo</h2>
+            <a href="#" class="btn bordes">Un Mate</a>
+          </div>
+          <video autoplay loop muted>
+            <source src="/videos/1portada.mp4" />
+          </video>
+        </div>
+      </div>
+    </header>
+
+    <!--Diseño de la seccion web-->
+    <div class="contenedor-nosotros contenedor">
+
+         <!-- CUERPO DEL FORMULARIO-->
+         <div class="col-md-10 col-sm-20">
+            <div class="row">
+                <h1>Regístrate</h1>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <form method="get">
+                        
+                        <label for="nombre" class="col col-form-label">Nombre</label>
+                        <div class="col">
+                            <input name="nombre" type="text" class="form-control" id="nombre" value="" placeholder="Ingrese su nombre completo">
+                        </div>
+                        <br>
+
+                        <!-- <label for="rut" class="col col-form-label">RUT</label>
+                        <div class="col">
+                            <input name="rut" type="text" class="form-control" id="rut" value="" required oninput="verificar(this)"placeholder="Ingrese su RUT">
+                        </div>
+                        <br> -->
+
+                        <label for="correo" class="col col-form-label">Correo</label>
+                        <div class="col">
+                            <input name="correo" type="email" class="form-control" id="correo" value="" placeholder="Ingrese su correo de contacto">
+                        </div>
+                        <br>
+
+                        <label for="password" class="col col-form-label">Contraseña</label>
+                        <div class="col">
+                            <input name="contraseña" type="password" class="form-control" id="password" value="" placeholder="Ingrese su contraseña">
+                        </div>
+                        <br>
+
+                        <label for="password2" class="col col-form-label">Validar Contraseña</label>
+                        <div class="col">
+                            <input name="contraseña" type="password" class="form-control" id="password2" value="" placeholder="Ingrese nuevamente su contraseña">
+                        </div>
+                        <br>
+
+                        <label for="comentarios" class="col col-form-label">Comentarios</label>
+                        <div class="col">
+                            <input name="comentarios" type="text-area" class="form-control" id="comentarios" value="" placeholder="Denos sus comentarios">
+                        </div>
+                        <br>
+
+                        <!-- BOTONES-->
+                        <input type="submit" class="btn-primary" value="Enviar" id="enviar">
+                        <input type="reset" class="btn-warning" value="Limpiar" id="limpiar">
+
+                        <script src="{% static 'core/js/validarFormulario.js'%}"></script>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+      
+      
+    </div>
+
+  
+    
+        
+    </div>
+    </section>
+
+  
+    <!--Se enlaza Js con Css-->
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+

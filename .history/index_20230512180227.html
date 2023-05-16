@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tienda Licandeo</title>
+    <script
+      src="https://kit.fontawesome.com/283335a286.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--esta informacion es para el estilo de las letras estan en google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <!--Lo siguiente es el menu superior donde se establece el Logo y la navegacion-->
+    <header class="encabezado">
+      <div class="contenedor-navegacion">
+        <!-- El Contenido-Navegacion es el padre de Logo y el menu de navegacion -->
+        <div class="contenido-navegacion contenedor">
+          <div class="logo">
+            <!--colores a Licandeo-->
+            <h2>
+              Tienda <span class="">Li</span><span>can</span
+              ><span class="">deo</span>
+            </h2>
+          </div>
+          <nav class="navegacion ocultar">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Tienda</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Tips Materos</a>
+          </nav>
+          <!--Se crea el menu desplegable-->
+          <div class="hamburguesa"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="contenido-header">
+        <div class="contenedor-encabezado">
+          <div class="texto-encabezado">
+            <h2>Tienda Licandeo</h2>
+            <a href="#" class="btn bordes">Un Mate</a>
+          </div>
+          <video autoplay loop muted>
+            <source src="/videos/1portada.mp4" />
+          </video>
+        </div>
+      </div>
+    </header>
+
+    <!--Diseño de la seccion web-->
+    <div class="contenedor-nosotros contenedor">
+      <div class="texto-nosotros">
+        <p class="bienvenida">Bienvenidos Cebadores!</p>
+        <h1>Quienes Somos</h1>
+        <p>
+          Bienvenido a Tienda Licandeo, un espacio dedicado a fortalecer la
+          cultura matera en nuestro país. Nos apasiona la Yerba Mate y todo lo
+          que representa, por lo que nos propusimos investigar sobre esta
+          cultura en Chile. <br />
+          Nos dimos cuenta de que muchas personas en nuestro país consumen la
+          infusión en su día a día, especialmente en la región del sur. Además,
+          muchos jóvenes están adoptando esta cultura que se ha transmitido de
+          generación en generación. <br />
+          Decidimos crear Tienda Licandeo para compartir nuestra experiencia y
+          conocimiento sobre la cultura matera a través de las redes sociales.
+          <br />
+          Queremos difundir la cultura, sus beneficios y valores, y fomentar la
+          producción local de Yerba Mate de alta calidad. <br />
+          Únete a nosotros en nuestro viaje por la cultura matera y descubre la
+          experiencia única y satisfactoria de disfrutar de la Yerba Mate.
+          <br />
+          ¡Te esperamos en Tienda Licandeo!
+        </p>
+        <a href="#" class="btn btn-rojo">Contactar</a>
+      </div>
+      <!-- Imagenes  -->
+      <div class="imagenes-nosotros">
+        <div class="imagen1">
+          <img data-src="/imag/imagen1.JPG" alt="Mate frutillar" />
+          <img data-src="/imag/imagen7.JPG" alt="Mate concepcion" />
+        </div>
+        <div class="imagenes2">
+          <img data-src="/imag/imagen2.JPG" alt="Mate salto del petrohue" />
+          <img data-src="/imag/imagen3.JPG" alt="Mate concepcion" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu para los productos -->
+    <section class="menu contenedor">
+      <!-- Titulo -->
+      <h2 class="texto-productos">Productos</h2>
+      <!-- Botones de producto -->
+      <div class="botones-productos">
+        <button class="todos btn btn-verde">Todos</button>
+        <button class="yerbamate btn btn-verde">Yerba Mate</button>
+        <button class="mates btn btn-verde">Mates</button>
+        <button class="bombilla btn btn-verde">Bombillas</button>
+        <button class="accesorios btn btn-verde">Accesorios</button>
+        <button class="sale btn btn-verde">Sale</button>
+      </div>
+      <!-- los productos a publicar -->
+      <div class="productos">
+        <!-- Yerba Mate  -->
+        <div class="producto" data-producto="yerbamate">
+          <!-- imagen -->
+          <img data-src="/imag/Amanda500gr.jpg" alt="Amanda500gr" />
+          <!-- nombre de producto -->
+          <h2>Amanda Tradicional 500gr</h2>
+          <!-- reseña de producto -->
+          <p>
+            Yerba Mate Amanda tradicional de 500 gr. Con palo de estacionamiento
+            natural de 12 meses, Provincia Misiones, Argentina.
+          </p>
+          <!-- precio y carrito -->
+          <div class="precio">
+            <p>$3.990</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="producto" data-producto="yerbamate">
+          <!-- imagen -->
+          <img data-src="/imag/Playadito500gr.jpg" alt="Playadito500gr" />
+          <!-- nombre de producto -->
+          <h2>Playadito 500gr</h2>
+          <!-- reseña de producto -->
+          <p>
+            Yerba Mate Playadito de 500 gr Con palo de estacionamiento
+            controlado, Colonia Liebig, Provincia de misiones, Argentina.
+          </p>
+          <!-- precio y carrito -->
+          <div class="precio">
+            <p>$3.990</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="producto" data-producto="yerbamate">
+          <!-- imagen -->
+          <img data-src="/imag/RosaMonte500gr.jpg" alt="RosaMonte500gr" />
+          <!-- nombre de producto -->
+          <h2>Rosa Monte 500gr</h2>
+          <!-- reseña de producto -->
+          <p>
+            Yerba Mate RosaMonte suave de 500 gr Con palo de estacionamiento
+            natural de 12 meses. Apostoles, Provincia de Misiones, Argentina.
+          </p>
+          <!-- precio y carrito -->
+          <div class="precio">
+            <p>$3.990</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <!--           Mates                    -->
+        <div class="producto" data-producto="mates">
+          <!-- imagen -->
+          <img data-src="/imag/matemateo.jpg" alt="matemateo" />
+          <!-- nombre de producto -->
+          <h2>Mate Mateo Original</h2>
+          <!-- reseña de producto -->
+          <p>
+            Material térmico; mantiene la temperatura de la yerba sin trasmitir
+            calor a la mano. Es flexible e irrompible, que lo convierte en el
+            mate ideal para transportar. 100% Silicona // Libre de BPA Carga
+            aproximada: 40 gr. de yerba.
+          </p>
+          <!-- precio y carrito -->
+          <div class="precio">
+            <p>$10.000</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="producto" data-producto="mates">
+          <!-- imagen -->
+          <img
+            data-src="/imag/matevidriotemplado.jpg"
+            alt="matevidriotemplado"
+          />
+          <!-- nombre de producto -->
+          <h2>Mate Vidrio Templado</h2>
+          <!-- reseña de producto -->
+          <p>
+            Mate de vidrio templado forrado. Este mate no requiere ser curado
+            antes de ser utilizado. Se puede utilizar para infusiones calientes
+            y frías. No conserva olor ni sabor. Fácil de lavar. Medidas: 8 x 7cm
+            (alto x diámetro boca del mate) Capacidad: 220/230ml
+          </p>
+          <!-- precio y carrito -->
+          <div class="precio">
+            <p>$7.000</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="producto" data-producto="mates">
+          <!-- imagen -->
+          <img data-src="/imag/mateautocebante.jpg" alt="mateautocebante" />
+          <!-- nombre de producto -->
+          <h2>Mate Autocebante</h2>
+          <!-- reseña de producto -->
+          <p>
+            Mate autocebante de plastico, apto para mate y terere. Este mate no
+            requiere ser curado y facil de lavar. Tamaño: Altura total (con
+            bombilla) 26,5cm Altura: (sin bombilla) 20cm Capacidad: 400ml
+          </p>
+          <!-- precio y carrito -->
+          <div class="precio">
+            <p>$10.000</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <!--             Bombillas              -->
+        <div class="producto" data-producto="bombilla">
+          <!-- imagen -->
+          <img data-src="/imag/bombillaplana.jpg" alt="bombillaplana" />
+          <!-- nombre de producto -->
+          <h2>Bombilla Plana</h2>
+          <!-- reseña de producto -->
+          <p>
+            Bombilla de acero inoxidable plana o chata. Medida: 16 cm Material:
+            Acero inoxidable Filtro no intercambiable.
+          </p>
+          <!-- precio y carrito -->
+          <div class="precio">
+            <p>$6.000</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="producto" data-producto="bombilla">
+          <!-- imagen -->
+          <img data-src="/imag/bombillacuchara.jpg" alt="bombillacuchara" />
+          <!-- nombre de producto -->
+          <h2>Bombilla Cuchara</h2>
+          <!-- reseña de producto -->
+          <p>
+            Bombilla cuchara para filtrado. Medida: 15 cm Material: Acero
+            inoxidable Filtro no intercambiable.
+          </p>
+          <!-- precio y carrito -->
+          <div class="precio">
+            <p>$6.000</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="producto" data-producto="bombilla">
+          <img data-src="/imag/bombillacolor.jpg" alt="bombillacolor" />
+          <h2>Bombilla color</h2>
+          <p>
+            Bombilla para mate de colores, Medida: 19 cm Material: Acero
+            inoxidable Filtro no intercambiable.
+          </p>
+          <div class="precio">
+            <p>$5.000</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="producto" data-producto="accesorios">
+        <img data-src="/imag/tapamate.jpg" alt="tapamate" />
+        <h2>Tapa Mate</h2>
+        <p>
+          Está diseñado para tapar el mate luego de utilizarlo y así evitar que
+          la yerba se vuelque dentro de nuestro bolso, mochila o auto. Al estar
+          hecho en silicona se ajusta a todos tus mates, es resistente y tiene
+          una larga vida útil.
+        </p>
+        <div class="precio">
+          <p>$3.990</p>
+          <button><i class="fas fa-shopping-basket"></i></button>
+        </div>
+      </div>
+      <div class="producto" data-producto="accesorios">
+        <img data-src="/imag/taponcebador.jpg" alt="taponcebador" />
+        <h2>Tapon cebador Stanley</h2>
+        <p>
+          Tapón cebador importante leer: Medidas: 4,5 cm de diámetro rosca tapón
+          5.3 cm diámetro externo boca termo 4,5 cm de altura rosca también
+          sirve para termos explorer de 1 litro, flying eagle de 1 litro y
+          termos kushiro de 1 litro y 1,2 litros de capacidad
+        </p>
+        <div class="precio">
+          <p>$10.000</p>
+          <button><i class="fas fa-shopping-basket"></i></button>
+        </div>
+      </div>
+      <div class="producto" data-producto="accesorios">
+        <img data-src="/imag/taquito.jpg" alt="taquito" />
+        <h2>Taquito para cebar mate</h2>
+        <p>
+          Es el accesorio ideal para preparar el mate perfecto, tiene la
+          inclinación justa para dejar reposando la yerba y formar la famosa
+          «montañita».
+        </p>
+        <div class="precio">
+          <p>$3.500</p>
+          <button><i class="fas fa-shopping-basket"></i></button>
+        </div>
+      </div>
+    </section>
+    <!--Se enlaza Js con Css-->
+    <script src="js/app.js"></script>
+  </body>
+</html>

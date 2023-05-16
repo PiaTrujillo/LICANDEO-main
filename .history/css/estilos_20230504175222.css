@@ -1,0 +1,212 @@
+:root{
+    --azul: #0021f5;
+    --verde:#00A149;
+    --blanco:#fff;
+    --rojo:#da464b;
+    --oscuro:#000;
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    /*1rem = 10px*/
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+/*        Globales              */
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+/* fuentes para los titulo y parrafos*/
+h1,h2{
+    font-family: var(--titulos);
+}
+h3,p,a{
+    font-family: var(--parrafos);
+}
+/*Estos colores se agregan al titulo con span */
+.azul{
+    color: var(--azul);
+}
+.rojo{
+    color: var(--rojo);
+}
+.verde{
+    color: var(--verde);
+}
+/*Que se oculte el menu*/
+.ocultar{
+    display: none;
+    color: var(--blanco);
+}
+/* Color y estilos de la X */
+.btn-cerrar{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--blanco);
+    position: absolute;
+    top: 0;
+    right: 50px;
+    user-select: none;
+}
+/*Al posicionar el puntero en la X aparece la mano */
+.btn-cerrar:hover{
+    cursor: pointer;
+}
+/* Para el texto Un mate que se encuentra sobre del video */
+.btn{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1rem 5rem;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+/* Se agrega el borde a el texto Un Mate */
+.bordes{
+    border: 3px solid var(--blanco);
+}
+.bordes:hover{
+    color: var(--verde);
+    background-color: var(--blanco);
+}
+/* como se sopreponer los elementos */
+.pantalla-completa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 4;
+}
+@keyframes desplazamiento {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+}
+/*Encabezado*/
+/*color de contenedor de logo y menu*/
+.contenedor-navegacion{
+    background-color: var(--oscuro);
+    position: relative;
+    z-index: 5;
+}
+.contenido-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*color para el logo y el menu*/
+.logo h2, .navegacion a {
+    color: var(--blanco);
+}
+.logo h2{
+    font-size: 3rem;
+}
+/* quitar las lineas ubicadas abajo del menu de navegacion*/
+/* Estilos de movil*/
+.navegacion a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    padding: 1.5rem;
+    padding-left: 4rem;
+    /* para el menu de navegacion se vea de modo vertical*/
+    display: block;
+    /* transicion del menu de naveghacion */
+    transition: color .3s ease-in-out;
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .navegacion a{
+        text-align: left;
+    }
+}
+/* colores de las letras pares e impares del menu de navegacion */
+.navegacion a:nth-child(even):hover{
+    color: var(--verde);
+}
+.navegacion a:nth-child(odd):hover{
+    color: var(--verde);
+}
+.navegacion a:first-of-type{
+    margin-top: 5rem;
+}
+/* para que el menu de navegacion se posicione al costado derecho*/
+.navegacion{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 40rem;
+    padding: 3rem 4rem;
+    background-color: var(--oscuro);
+    animation: desplazamiento .5s ease-in-out;
+}
+/*Al posicionarse en el menu hamburguesa aparezca la mano */
+.hamburguesa:hover{
+    cursor: pointer;
+}
+/*Menu desplegable ubicado en index*/
+.hamburguesa span{
+    background-color: var(--blanco);
+    display: block;
+    width: 5rem;
+    height: .5rem;
+    margin-bottom: .5rem;
+    animation: desplazamiento .5s ease-in-out;
+}
+/* Video */
+.contenido-header{
+    position: relative;
+}
+.contenido-header::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+/* posicionar texto al medio del video */
+.texto-encabezado{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* se alinea al centro del video el texto */
+    align-items: center;
+    justify-content: center;
+}
+.texto-encabezado h2{
+    color: var(--blanco);
+    font-size: 4rem;
+}
+/* Para movil */
+@media(min-width: 768px) {
+    .texto-encabezado h2{
+        font-size: 8rem;
+    }
+}
+video{
+    width: 100%;
+    height: 100%;
+}

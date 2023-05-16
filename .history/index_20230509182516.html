@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tienda Licandeo</title>
+    <script
+      src="https://kit.fontawesome.com/283335a286.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--esta informacion es para el estilo de las letras estan en google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <!--Lo sigueinte es el menu superior donde se establece el Logo y la navegacion-->
+    <header class="encabezado">
+      <div class="contenedor-navegacion">
+        <!-- El Contenido-Navegacion es el padre de Logo y el menu de navegacion -->
+        <div class="contenido-navegacion contenedor">
+          <div class="logo">
+            <!--colores a Licandeo-->
+            <h2>
+              Tienda <span class="">Li</span><span>can</span
+              ><span class="">deo</span>
+            </h2>
+          </div>
+          <nav class="navegacion ocultar">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Tienda</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Tips Materos</a>
+          </nav>
+          <!--Se crea el menu desplegable-->
+          <div class="hamburguesa"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="contenido-header">
+        <div class="contenedor-encabezado">
+          <div class="texto-encabezado">
+            <h2>Tienda Licandeo</h2>
+            <a href="#" class="btn bordes">Un Mate</a>
+          </div>
+          <video autoplay loop muted>
+            <source src="/videos/1portada.mp4" />
+          </video>
+        </div>
+      </div>
+    </header>
+    <!--Diseño de la seccion web-->
+    <div class="contenedor-nosotros contenedor">
+      <div class="texto-nosotros">
+        <p class="bienvenida">Bienvenidos Cebadores!</p>
+        <h1>Quienes Somos</h1>
+        <p>
+          Bienvenido a Tienda Licandeo, un espacio dedicado a fortalecer la
+          cultura matera en nuestro país. Nos apasiona la Yerba Mate y todo lo
+          que representa, por lo que nos propusimos investigar sobre esta
+          cultura en Chile. <br />
+          Nos dimos cuenta de que muchas personas en nuestro país consumen la
+          infusión en su día a día, especialmente en la región del sur. Además,
+          muchos jóvenes están adoptando esta cultura que se ha transmitido de
+          generación en generación. <br />
+          Decidimos crear Tienda Licandeo para compartir nuestra experiencia y
+          conocimiento sobre la cultura matera a través de las redes sociales.
+          <br />
+          Queremos difundir la cultura, sus beneficios y valores, y fomentar la
+          producción local de Yerba Mate de alta calidad. <br />
+          Únete a nosotros en nuestro viaje por la cultura matera y descubre la
+          experiencia única y satisfactoria de disfrutar de la Yerba Mate.
+          <br />
+          ¡Te esperamos en Tienda Licandeo!
+        </p>
+        <a href="#" class="btn btn-rojo">Contactar</a>
+      </div>
+      <!-- Imagenes  -->
+      <div class="imagenes-nosotros">
+        <div class="imagen1">
+          <img data-src="/imag/imagen1.JPG" alt="Mate frutillar" />
+        </div>
+        <div class="imagenes2">
+          <img data-src="/imag/imagen2.JPG" alt="Mate salto del petrohue" />
+          <img data-src="/imag/imagen3.JPG" alt="Mate concepcion" />
+        </div>
+      </div>
+    </div>
+    <section class="menu contenedor"></section>
+    <!--Se enlaza Js con Css-->
+    <script src="js/app.js"></script>
+  </body>
+</html>

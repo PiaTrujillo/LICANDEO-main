@@ -1,0 +1,58 @@
+:root{
+    --verde:#00A149;
+    --blanco:#fff;
+    --rojo:#881014;
+    --oscuro:#000;
+    --azul: #fff);
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    /*1rem = 10px*/
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+/*Globales*/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+/* fuentes para los titulo y parrafos*/
+h1,h2{
+    font-family: var(--titulos);
+}
+h3,p,a{
+    font-family: var(--parrafos);
+}
+.azul{
+    color: var(--);
+}
+/*Encabezado*/
+/*color de contenedor de logo y menu*/
+.contenedor-navegacion{
+    background-color: var(--oscuro);
+}
+.contenido-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*color para el logo y el menu*/
+.logo h2, .navegacion a{
+    color: var(--blanco);
+}
+/* quitar las lineas ubicadas abajo del menu de navegacion*/
+.navegacion a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+}
